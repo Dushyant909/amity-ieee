@@ -20,6 +20,7 @@ import Contact from "./pages/Contact";
 import WhackHackathon from "./pages/WhackHackathon";
 import WhackHackathon2 from "./pages/WhackHackathon2";
 import WhackHackathon3 from "./pages/WhackHackathon3";
+import Spark2026 from "./pages/Spark2026";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/whack-hackathon" element={<WhackHackathon />} />
             <Route path="/whack-hackathon-2" element={<WhackHackathon2 />} />
             <Route path="/whack-hackathon-3" element={<WhackHackathon3 />} />
+            <Route path="/spark-2026" element={<Spark2026 />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

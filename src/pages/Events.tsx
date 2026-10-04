@@ -20,15 +20,15 @@ const upcomingEvents = [
   },
   {
     id: 2,
-    title: "Spark 2026 @IEEE Day",
+    title: "SPARK 2026 × IEEE DAY",
     type: "Event",
-    date: "Oct 7, 2026",
+    date: "Oct 6, 2026",
     time: "10:00 AM",
-    location: "Main Auditorium",
+    location: "Amity Innovation Incubator, 3rd Floor, E-Block",
     description:
-      "Annual IEEE Day celebration featuring panel discussions, technical quizzes, debates, and networking sessions.",
-    hasPage: false,
-    link: "",
+      "Guest session, tech quiz, game battle, and talent stage; open for everyone.",
+    hasPage: true,
+    link: "/spark-2026",
   },
 ];
 
@@ -163,10 +163,10 @@ const Events = () => {
 
                     {event.hasPage ? (
                       <Link to={event.link}>
-                        <Button variant="default" className="w-full group/btn hover-scale">
+                        <Button variant="outline" size="sm" className="w-full group/btn">
                           View Details
                           <ArrowRight
-                            size={16}
+                            size={14}
                             className="ml-2 group-hover/btn:translate-x-1 transition-transform"
                           />
                         </Button>
