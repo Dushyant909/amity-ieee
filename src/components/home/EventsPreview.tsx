@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ScrollAnimation } from "@/hooks/use-scroll-animation";
 import introspectImage from "@/assets/introspect-2.jpg";
-import sparkImage from "@/assets/spark-2.jpg";
+import sparkImage from "@/assets/spark-2026-poster.png";
 
 const upcomingEvents = [
   {

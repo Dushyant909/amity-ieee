@@ -1,7 +1,7 @@
 import { Calendar, Clock, MapPin } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import sparkImage from "@/assets/spark-2.jpg";
+import sparkImage from "@/assets/spark-2026-poster.png";
 
 const activities = [
   "Inspiring Workshop (Guest Session)",
