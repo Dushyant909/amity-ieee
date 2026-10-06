@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ScrollAnimation } from "@/hooks/use-scroll-animation";
 import introspectImage from "@/assets/introspect-2.jpg";
-import sparkImage from "@/assets/spark-2.jpg";
+import sparkImage from "@/assets/spark-2026-poster.png";
 
 const upcomingEvents = [
   {
@@ -20,15 +20,16 @@ const upcomingEvents = [
   },
   {
     id: 2,
-    title: "Spark 2026 @IEEE Day",
+    title: "SPARK 2026 × IEEE DAY",
     type: "Event",
-    date: "Oct 7, 2026",
+    date: "Oct 6, 2026",
     time: "10:00 AM",
-    location: "Main Auditorium",
+    location: "Amity Innovation Incubator, 3rd Floor, E-Block",
     description:
-      "Annual IEEE Day celebration with panel discussions, technical quizzes, debates, and networking.",
+      "Guest session, tech quiz, game battle, and talent stage; open for everyone.",
     featured: false,
     image: sparkImage,
+    link: "/spark-2026",
   },
 ];
 
@@ -128,14 +129,27 @@ const EventsPreview = () => {
 
                   {/* CTA */}
                   <Button
+                    asChild={Boolean(event.link)}
                     variant="ghost"
                     className="w-full justify-center group/btn text-primary hover:bg-primary/10"
                   >
-                    Learn More
-                    <ArrowRight
-                      size={16}
-                      className="ml-2 group-hover/btn:translate-x-1 transition-transform"
-                    />
+                    {event.link ? (
+                      <Link to={event.link}>
+                        Learn More
+                        <ArrowRight
+                          size={16}
+                          className="ml-2 group-hover/btn:translate-x-1 transition-transform"
+                        />
+                      </Link>
+                    ) : (
+                      <>
+                        Learn More
+                        <ArrowRight
+                          size={16}
+                          className="ml-2 group-hover/btn:translate-x-1 transition-transform"
+                        />
+                      </>
+                    )}
                   </Button>
                 </div>
               </div>
